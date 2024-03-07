@@ -1,0 +1,136 @@
+#hero {
+  margin-top: 29px;
+  .hero {
+    .heroSubject {
+      p {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29.4px;
+        text-align: center;
+        color: #333333;
+      }
+      h1 {
+        margin: 20px 0;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40.86px;
+        text-align: center;
+        color: #333333;
+      }
+    }
+    .heroBtns {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 40px;
+      width: 1110px;
+      margin-left: -170px;
+      button {
+        width: 175px;
+        height: 50px;
+        background-color: white;
+        color: #333333;
+        text-transform: uppercase;
+        border: solid 2px #333333;
+
+        &:focus {
+          background-color: #333333;
+          color: white;
+          transition: 0.5s;
+        }
+      }
+    }
+    .heroBlock {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(3, 50%);
+      row-gap: 50px;
+      padding: 20px;
+      .box-1 {
+        background: url(../../../images/Rectangle\ 5.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+      .box-2 {
+        background: url(../../../images/box-2.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+      .box-3 {
+        background: url(../../../images/box-3.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+      .box-4 {
+        background: url(../../../images/box-4.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+      .box-5 {
+        background: url(../../../images/box-5.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+      .box-6 {
+        background: url(../../../images/box-6.png);
+        width: 350px;
+        height: 280px;
+        background-size: cover;
+        h1 {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 14pc;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
