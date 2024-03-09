@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/Group 3.png";
 import { RiAdminLine } from "react-icons/ri";
 import { FaHeart } from "react-icons/fa";
@@ -11,11 +11,13 @@ const Header = () => {
         <div className="container">
           <div className="header">
             <nav>
-              <NavLink to="/">Контрагентам</NavLink>
+              <NavLink to="/a">Контрагентам</NavLink>
               <NavLink to="/disygner">Дизайнерам</NavLink>
               <NavLink to="/vacanse">Вакансии</NavLink>
             </nav>
-            <img src={logo} alt="" />
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
 
             <div className="btns">
               <div className="input-btn">
@@ -26,7 +28,9 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
-                <RiAdminLine className="icons-admin" />
+                <Link to="/admin">
+                  <RiAdminLine className="icons-admin" />
+                </Link>
                 <FaHeart className="icons-like" />
               </div>
             </div>

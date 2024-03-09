@@ -1,0 +1,19 @@
+.catalog {
+  margin-top: 100px;
+  .selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    select {
+      width: 160px;
+      height: 34px;
+      top: 211px;
+      left: 405px;
+      border: 1px;
+      font-size: 18px;
+      background-color: transparent;
+      border-bottom: solid 2px #d6d6d6;
+      outline: none;
+    }
+  }
+}

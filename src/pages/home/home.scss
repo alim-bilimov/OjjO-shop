@@ -49,3 +49,174 @@
     }
   }
 }
+
+#hero {
+  margin-top: 140px;
+  .hero {
+    .hero-text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      h5 {
+        color: #3d3d3d;
+
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      h1 {
+        font-family: Noto Serif;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 14px 0;
+      }
+    }
+    .btn-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      button {
+        padding: 10px 25px;
+        font-size: 20px;
+        border: none;
+        border: solid 1px #3d3d3d;
+        background-color: transparent;
+        line-height: 60.19px;
+        letter-spacing: 4px;
+        margin: 0 15px;
+        transition: 0.5s;
+        &:focus {
+          background-color: #3d3d3d;
+          color: #ffffff;
+        }
+      }
+    }
+    .display-all {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 35%);
+      margin-right: 39px;
+      row-gap: 70px;
+    }
+  }
+}
+
+#my-salone {
+  background: url("../../images/background.png") no-repeat center/cover;
+  height: 60vh;
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .my-salone {
+    .salone-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h5 {
+        color: #ffffff;
+
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      h1 {
+        color: #ffffff;
+        margin: 30px 0;
+        font-family: Noto Serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 730px;
+        height: 100px;
+        margin: 20px 0;
+      }
+      button {
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding: 15px 35px;
+        margin: 30px 0;
+        border: 1px;
+        gap: 10px;
+        border: none;
+      }
+    }
+  }
+}
+#utility {
+  .utility {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .utility-text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        color: #3d3d3d;
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      h1 {
+        margin: 20px 0;
+        font-family: Noto Serif;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    .card {
+      img {
+        margin: 0 8px;
+      }
+    }
+    button {
+      font-family: Gilroy;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+      margin: 30px 0;
+      padding: 18px 35px;
+      background-color: #3d3d3d;
+      color: #ffffff;
+      border: none;
+    }
+  }
+}

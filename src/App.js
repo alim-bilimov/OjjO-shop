@@ -1,16 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
-import Home from "./pages/home";
-import Hero from "./pages/home/Hero/imdex";
-import Salony from "./pages/home/Salony/salony";
+import MainRouter from "./router/mainRouter";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
-      <Hero />
-      <Salony />
+      <MainRouter />
     </div>
   );
 }

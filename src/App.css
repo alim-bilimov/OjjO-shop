@@ -1,7 +1,7 @@
 @import "./components/header/header.scss";
 @import "./pages/home/home.scss";
-@import "./pages/home/Hero/hero.scss";
-@import "./pages/home/Salony/salony.scss";
+@import "./pages/admin/admin.scss";
+@import "./pages/Catalog/catalog.scss";
 * {
   margin: 0;
   padding: 0;
