@@ -35,7 +35,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div id="hero">
         <div className="container">
           <div className="hero">
@@ -74,7 +73,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div id="my-salone">
         <div className="container">
           <div className="my-salone">
@@ -94,7 +92,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div id="utility">
         <div className="container">
           <div className="utility">
@@ -108,6 +105,40 @@ const Home = () => {
               <img src={blogItemThree} alt="" />
             </div>
             <button>читать наш блог</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-we">
+        <div className="container">
+          <div className="about">
+            <div className="about-text">
+              <h3>О Нас</h3>
+              <h1>Наши странички в instagram</h1>
+            </div>
+            <div className="about-all">
+              <div className="about-left">
+                <a href="">Instagram: @alimch1k</a>
+                <h3>О Себе:</h3>
+                <nav>
+                  <li>fullstack-разработчик JS</li>
+                  <li>Предприниматель</li>
+                  <li>бизнесмен и стратег</li>
+                  <li>Team Lead команды БКШЧ</li>
+                </nav>
+              </div>
+              <div className="about-right">
+                <a href="">Instagram: @maksat0vich02</a>
+                <h3>О Себе:</h3>
+                <nav>
+                  <li>JS: Senior developer</li>
+                  <li>Программист с 5-6 летним опытом</li>
+                  <li>Пишет на 3 языках программирования</li>
+                  <li>Помощник Team Lead</li>
+                  <li></li>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
