@@ -220,3 +220,96 @@
     }
   }
 }
+
+#about-we {
+  background: url("../../images/salony.png") no-repeat center/cover;
+  height: 60vh;
+  margin: 50px 0;
+  margin-top: 100px;
+  .about {
+    display: flex;
+
+    flex-direction: column;
+    padding-top: 70px;
+    .about-text {
+      h3 {
+        color: white;
+
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      h1 {
+        margin: 10px 0;
+        font-family: Noto Serif;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    .about-left {
+      a {
+        color: #ffffff;
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+      }
+      h3 {
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: #ffffff;
+      }
+      li {
+        color: #ffffff;
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+      }
+    }
+    .about-right {
+      a {
+        color: #ffffff;
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+      }
+      h3 {
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: #ffffff;
+      }
+      li {
+        color: #ffffff;
+        font-family: Gilroy;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+      }
+    }
+    .about-all {
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
