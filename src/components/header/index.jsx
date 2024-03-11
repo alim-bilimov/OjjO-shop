@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../images/Group 3.png";
@@ -29,9 +30,16 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
-                <Link to="/admin">
+                <Link to="admin">
                   <RiAdminLine className="icons-admin" />
                 </Link>
+                <Link to={"login"}>
+                  <img
+                    src="https://freepngimg.com/save/153886-logo-google-hq-image-free/1261x1280"
+                    alt=""
+                  />
+                </Link>
+                <FaHeart className="icons-like" />
                 <FaHeart
                   onClick={() => {
                     navigate("/heart");
