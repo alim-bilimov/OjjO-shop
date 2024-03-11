@@ -1,0 +1,77 @@
+#password {
+  .password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .boxx {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      .pp {
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+      }
+      .p {
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    .ppp {
+      font-size: 20px;
+      font-weight: 700;
+      color: black;
+      padding-top: 100px;
+    }
+    .passwordBlock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+      input {
+        width: 300px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid gray 1px;
+      }
+      button {
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #333333de;
+        color: white;
+        font-size: 18px;
+        border: solid gray 1px;
+      }
+    }
+    .googleBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      .googleImg {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+      .googleBtn {
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        border: solid gray 1px;
+      }
+    }
+  }
+}
