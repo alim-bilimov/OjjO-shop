@@ -2,6 +2,8 @@
 @import "./pages/home/home.scss";
 @import "./pages/admin/admin.scss";
 @import "./pages/Catalog/catalog.scss";
+@import "./pages/Detail/detail.scss";
+@import "./pages/heart/heart.scss";
 * {
   margin: 0;
   padding: 0;

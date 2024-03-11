@@ -9,6 +9,7 @@ const Admin = () => {
     comment: "",
     brand: "",
     img: "",
+    category: "",
   });
 
   function getLableInput(e) {
@@ -57,13 +58,13 @@ const Admin = () => {
               <div className="admin-right">
                 <input type="text" placeholder="priceSale" />
                 <div className="admin-btns">
-                  <select name="" id="">
+                  <select name={getLableInput} id="">
                     <option value="">Категория</option>
-                    <option value="">Кольца</option>
-                    <option value="">серьги</option>
-                    <option value="">Подвески</option>
-                    <option value="">Часы</option>
-                    <option value="">Браслеты</option>
+                    <option value={getLableInput}>Кольца</option>
+                    <option value={getLableInput}>серьги</option>
+                    <option value={getLableInput}>Подвески</option>
+                    <option value={getLableInput}>Часы</option>
+                    <option value={getLableInput}>Браслеты</option>
                   </select>
                   <button
                     onClick={() => {
