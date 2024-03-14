@@ -36,7 +36,7 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
-                <Link to="admin">
+                <Link to="password">
                   <RiAdminLine className="icons-admin" />
                 </Link>
                 <Link to={"login"}>
