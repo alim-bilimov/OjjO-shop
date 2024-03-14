@@ -80,6 +80,7 @@ const Basket = () => {
             )}
 
             <div className="foots">
+              <h1>Продукции которые Могут Понравиться вам</h1>
               <div className="card-foots">
                 {random.map((el) => (
                   <div>
