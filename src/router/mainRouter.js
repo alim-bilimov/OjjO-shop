@@ -8,6 +8,7 @@ import Loggin from "../components/authentication/Loggin";
 import Detail from "../pages/Detail";
 import Heart from "../pages/heart";
 import Basket from "../pages/Basket";
+import Search from "../pages/search";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -18,6 +19,7 @@ const MainRouter = () => {
     { path: "/detail/:id", element: <Detail />, key: 3 },
     { path: "/heart", element: <Heart />, key: 4 },
     { path: "/basket", element: <Basket />, key: 5 },
+    { path: "/search", element: <Search />, key: 6 },
   ];
 
   const PRIVATE = [{ path: "/admin", element: <Admin />, key: 1 }];

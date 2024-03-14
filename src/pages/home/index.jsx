@@ -118,7 +118,9 @@ const Home = () => {
             </div>
             <div className="about-all">
               <div className="about-left">
-                <a href="">Instagram: @alimch1k</a>
+                <a href="https://www.instagram.com/alimch1kl/">
+                  Instagram: @alimch1k
+                </a>
                 <h3>О Себе:</h3>
                 <nav>
                   <li>fullstack-разработчик JS</li>
@@ -128,7 +130,9 @@ const Home = () => {
                 </nav>
               </div>
               <div className="about-right">
-                <a href="">Instagram: @maksat0vich02</a>
+                <a href="https://www.instagram.com/maksat0vich02/">
+                  Instagram: @maksat0vich02
+                </a>
                 <h3>О Себе:</h3>
                 <nav>
                   <li>JS: Senior developer</li>

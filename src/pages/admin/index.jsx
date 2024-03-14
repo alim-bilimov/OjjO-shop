@@ -10,12 +10,12 @@ const Admin = () => {
     brand: "",
     img: "",
     category: "",
+    count: 1,
   });
 
   function getLableInput(e) {
     setValues({ ...values, [e.target.name]: e.target.value });
   }
-  //beksultan
 
   return (
     <div>
@@ -60,8 +60,6 @@ const Admin = () => {
                 <input type="text" placeholder="priceSale" />
                 <div className="admin-btns">
                   <select onChange={getLableInput} name="category" id="">
-                    <option value={getLableInput}>Категория</option>
-                  <select name={getLableInput} id="">
                     <option value="">Категория</option>
                     <option value={getLableInput}>Кольца</option>
                     <option value={getLableInput}>серьги</option>
