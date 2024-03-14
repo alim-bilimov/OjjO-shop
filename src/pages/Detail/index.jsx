@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { UseMainContext } from "../../context/MainContext";
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import iconTwo from "../../images/icon__item.png";
 import iconThree from "../../images/icon__item (1).png";
 import iconFor from "../../images/icon__item (2).png";

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { UseMainContext } from "../../context/MainContext";
+import { useNavigate } from "react-router-dom";
 
 const Admin = () => {
   const { addInputChange } = UseMainContext();
+  const naviget = useNavigate();
   const [values, setValues] = useState({
     textName: "",
     price: "",
@@ -10,12 +12,13 @@ const Admin = () => {
     brand: "",
     img: "",
     category: "",
+    for: "",
+    season: "",
   });
 
   function getLableInput(e) {
     setValues({ ...values, [e.target.name]: e.target.value });
   }
-  //beksultan
 
   return (
     <div>
@@ -28,40 +31,38 @@ const Admin = () => {
                 <input
                   onChange={getLableInput}
                   type="text"
-                  placeholder="nameURL"
+                  placeholder="Названия"
                   name="textName"
                 />
                 <input
                   onChange={getLableInput}
                   type="number"
-                  placeholder="priceURL"
+                  placeholder="Цена"
                   name="price"
                 />
                 <input
                   onChange={getLableInput}
                   type="text"
-                  placeholder="commentURL"
+                  placeholder="Описания"
                   name="comment"
                 />
                 <input
                   onChange={getLableInput}
                   type="text"
-                  placeholder="brandURL"
+                  placeholder="Бренды"
                   name="brand"
                 />
                 <input
                   onChange={getLableInput}
                   type="text"
-                  placeholder="imgURL"
+                  placeholder="Фото"
                   name="img"
                 />
               </div>
               <div className="admin-right">
-                <input type="text" placeholder="priceSale" />
+                <input type="text" placeholder="Скидка" />
                 <div className="admin-btns">
                   <select onChange={getLableInput} name="category" id="">
-                    <option value={getLableInput}>Категория</option>
-                  <select name={getLableInput} id="">
                     <option value="">Категория</option>
                     <option value={getLableInput}>Кольца</option>
                     <option value={getLableInput}>серьги</option>
@@ -69,9 +70,24 @@ const Admin = () => {
                     <option value={getLableInput}>Часы</option>
                     <option value={getLableInput}>Браслеты</option>
                   </select>
+                  <div className="admin-btns">
+                    <select onChange={getLableInput} name="for" id="">
+                      <option value="">Для Кого</option>
+                      <option value={getLableInput}>Для Мужчины</option>
+                      <option value={getLableInput}>Для Женщины</option>
+                    </select>
+                  </div>
+                  <div className="admin-btns">
+                    <select onChange={getLableInput} name="season" id="">
+                      <option value="">Сезон</option>
+                      <option value={getLableInput}>Зимние Украшения</option>
+                      <option value={getLableInput}>Летние Украшения</option>
+                    </select>
+                  </div>
                   <button
                     onClick={() => {
                       addInputChange(values);
+                      naviget("/catalog");
                     }}
                   >
                     Add

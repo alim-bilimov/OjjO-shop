@@ -8,6 +8,7 @@ import Loggin from "../components/authentication/Loggin";
 import Detail from "../pages/Detail";
 import Heart from "../pages/heart";
 import Basket from "../pages/Basket";
+import Password from "../pages/Password/password";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -20,7 +21,10 @@ const MainRouter = () => {
     { path: "/basket", element: <Basket />, key: 5 },
   ];
 
-  const PRIVATE = [{ path: "/admin", element: <Admin />, key: 1 }];
+  const PRIVATE = [
+    { path: "/admin", element: <Admin />, key: 1 },
+    { path: "/password", element: <Password />, key: 2 },
+  ];
 
   return (
     <Routes>

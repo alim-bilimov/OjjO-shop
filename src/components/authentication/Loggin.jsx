@@ -18,9 +18,9 @@ const Login = () => {
     }
   }
   return (
-    <div id="password">
+    <div id="register">
       <div className="container">
-        <div className="password">
+        <div className="register">
           <div className="box">
             <div className="boxx">
               <p
@@ -44,7 +44,7 @@ const Login = () => {
               <h2>Войти в аккаунт</h2>
             </div>
           </div>
-          <div className="passwordBlock">
+          <div className="registerBlock">
             <input
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Имя пользователя"

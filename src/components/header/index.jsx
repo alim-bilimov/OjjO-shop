@@ -1,4 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
 import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../images/Group 3.png";
@@ -30,7 +29,7 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
-                <Link to="admin">
+                <Link to="password">
                   <RiAdminLine className="icons-admin" />
                 </Link>
                 <Link to={"login"}>
@@ -39,7 +38,6 @@ const Header = () => {
                     alt=""
                   />
                 </Link>
-                <FaHeart className="icons-like" />
                 <FaHeart
                   onClick={() => {
                     navigate("/heart");
