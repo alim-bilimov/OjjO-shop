@@ -4,8 +4,10 @@ import logo from "../../images/Group 3.png";
 import { RiAdminLine } from "react-icons/ri";
 import { FaHeart } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
+import { UseMainContext } from "../../context/MainContext";
 const Header = () => {
   const navigate = useNavigate();
+  const { count, setValues } = UseMainContext();
   return (
     <div>
       <header id="header">
@@ -22,8 +24,13 @@ const Header = () => {
 
             <div className="btns">
               <div className="input-btn">
-                <input type="text" placeholder="Text ..." />
-                <button>
+                <input
+                  onClick={() => navigate("/search")}
+                  onChange={(e) => setValues(e.target.value)}
+                  type="text"
+                  placeholder="Text ..."
+                />
+                <button onClick={() => {}}>
                   {" "}
                   <IoMdSearch />
                 </button>
@@ -38,6 +45,7 @@ const Header = () => {
                     alt=""
                   />
                 </Link>
+
                 <FaHeart
                   onClick={() => {
                     navigate("/heart");

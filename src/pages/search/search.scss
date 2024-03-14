@@ -1,0 +1,42 @@
+.search {
+  .search-card {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .search-text {
+      margin-left: 40px;
+      h1 {
+        font-family: Gilroy;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #3d3d3d;
+      }
+      p {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        margin: 15px 0;
+        color: #3d3d3d;
+      }
+      h2 {
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+
+        color: #3d3d3d;
+      }
+    }
+  }
+}

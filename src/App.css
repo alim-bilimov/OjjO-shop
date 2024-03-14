@@ -6,6 +6,8 @@
 @import "./pages/Detail/detail.scss";
 @import "./pages/heart/heart.scss";
 @import "./pages/Password/password.scss";
+@import "./pages/Basket/basket.scss";
+@import "./pages/search/search.scss";
 * {
   margin: 0;
   padding: 0;

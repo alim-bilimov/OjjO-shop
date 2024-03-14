@@ -14,6 +14,7 @@ const Admin = () => {
     category: "",
     for: "",
     season: "",
+    count: 1,
   });
 
   function getLableInput(e) {

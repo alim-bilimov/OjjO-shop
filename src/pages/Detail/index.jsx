@@ -9,9 +9,10 @@ import { FaHeart } from "react-icons/fa";
 
 let likes = JSON.parse(localStorage.getItem("heart"));
 const Detail = () => {
-  const { product, getProduct } = UseMainContext();
+  const { product, getProduct, setCount, count } = UseMainContext();
   const [click, setClick] = useState(false);
   const [heart, setHeart] = useState(likes || false);
+  const [mouse, setMouse] = useState(false);
   const navigate = useNavigate();
 
   const { id } = useParams();
@@ -22,8 +23,18 @@ const Detail = () => {
 
   function getOrderData() {
     let products = JSON.parse(localStorage.getItem("order")) || [];
-    products.push(sortProduct[0]);
-    localStorage.setItem("order", JSON.stringify(products));
+    let res = products.some((el) => {
+      let arr = sortProduct.some((il) => {
+        return el.id == il.id;
+      });
+      return arr;
+    });
+    if (res == false) {
+      products.push(sortProduct[0]);
+      localStorage.setItem("order", JSON.stringify(products));
+    } else {
+      alert("Этот продукт уже добавлен!!!");
+    }
   }
 
   let sortProduct = product.filter((el) => {
@@ -62,7 +73,7 @@ const Detail = () => {
                             color: heart ? "red" : "black",
                           }}
                           onClick={() => {
-                            setHeart(!heart);
+                            setHeart(true);
                             getOrderData();
                           }}
                           className="heart"
