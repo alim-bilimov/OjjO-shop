@@ -82,7 +82,7 @@ const Detail = () => {
                       <div className="detail-price">
                         <p>{el.comment.slice(0, 450)}</p>
 
-                        <h1>{el.price}сом</h1>
+                        <h1>{el.price} $</h1>
                       </div>
                       <div className="detail-btn">
                         <button>купить</button>
@@ -103,6 +103,9 @@ const Detail = () => {
                     <h1>Полное описание товара</h1>
                     <p>{click ? el.comment : el.comment.slice(0, 380)}</p>
                     <h1
+                      style={{
+                        cursor: "pointer",
+                      }}
                       onClick={() => {
                         setClick(!click);
                       }}
@@ -113,7 +116,6 @@ const Detail = () => {
                   <div className="just">
                     <img src={iconTwo} alt="" />
                     <img src={iconFor} alt="" />
-
                     <img src={iconThree} alt="" />
                     <img src={iconFive} alt="" />
                   </div>

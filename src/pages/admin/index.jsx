@@ -14,6 +14,7 @@ const Admin = () => {
     category: "",
     for: "",
     season: "",
+    brandy: "",
     count: 1,
   });
 
@@ -60,17 +61,20 @@ const Admin = () => {
                   name="img"
                 />
               </div>
-              <div className="admin-right">
-                <input type="text" placeholder="Скидка" />
-                <div className="admin-btns">
-                  <select onChange={getLableInput} name="category" id="">
-                    <option value="">Категория</option>
-                    <option value={getLableInput}>Кольца</option>
-                    <option value={getLableInput}>серьги</option>
-                    <option value={getLableInput}>Подвески</option>
-                    <option value={getLableInput}>Часы</option>
-                    <option value={getLableInput}>Браслеты</option>
-                  </select>
+              <div className="admin-box">
+                <div className="admin-right">
+                  <input type="text" placeholder="Скидка" />
+                  <div className="admin-btns">
+                    <select onChange={getLableInput} name="category" id="">
+                      <option value="">Категория</option>
+                      <option value={getLableInput}>Кольца</option>
+                      <option value={getLableInput}>Серьги</option>
+                      <option value={getLableInput}>Подвески</option>
+                      <option value={getLableInput}>Часы</option>
+                      <option value={getLableInput}>Браслеты</option>
+                      <option value={getLableInput}>Запонки</option>
+                    </select>
+                  </div>
                   <div className="admin-btns">
                     <select onChange={getLableInput} name="for" id="">
                       <option value="">Для Кого</option>
@@ -83,6 +87,16 @@ const Admin = () => {
                       <option value="">Сезон</option>
                       <option value={getLableInput}>Зимние Украшения</option>
                       <option value={getLableInput}>Летние Украшения</option>
+                    </select>
+                  </div>
+                  <div className="admin-btns">
+                    <select onChange={getLableInput} name="brandy" id="">
+                      <option value="">Бренды</option>
+                      <option value={getLableInput}>Rolex</option>
+                      <option value={getLableInput}>Maria & Angument</option>
+                      <option value={getLableInput}>Richard & Milli</option>
+                      <option value={getLableInput}>Patek Philippe</option>
+                      <option value={getLableInput}>Baselworld</option>
                     </select>
                   </div>
                   <button

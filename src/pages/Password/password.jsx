@@ -13,8 +13,6 @@ const Password = () => {
 
   const naviget = useNavigate();
 
-  //beksultan
-
   function callTimes() {
     if (count == 0) {
       if (time > 0) {
@@ -44,7 +42,7 @@ const Password = () => {
                 display: count == 0 ? "none" : "block",
               }}
             >
-              У вас есть {count} попытка
+              У вас есть {count} попытки
             </h1>
             <h1
               style={{

@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    gap: 10px;
     nav {
       display: flex;
       align-items: center;
@@ -47,10 +48,14 @@
         font-size: 24px;
         color: white;
       }
-      img {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
+      p {
+        width: 20%;
+        font-family: Gilroy;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: white;
+        align-items: center;
       }
     }
   }

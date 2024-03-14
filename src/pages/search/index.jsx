@@ -37,10 +37,6 @@ const Search = ({ addData }) => {
                         {el.brand}
                       </h2>
                     </div>
-                    <div className="btn-search">
-                      <button></button>
-                      <button></button>
-                    </div>
                   </div>
                 </div>
               ))

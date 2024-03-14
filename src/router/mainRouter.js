@@ -10,6 +10,12 @@ import Heart from "../pages/heart";
 import Basket from "../pages/Basket";
 import Password from "../pages/Password/password";
 import Search from "../pages/search";
+import Watch from "../pages/Watch/watch";
+import Ring from "../pages/Watch/ring";
+import Sergi from "../pages/Watch/sergi";
+import Podveski from "../pages/Watch/podveski";
+import Braslety from "../pages/Watch/braslety";
+import Zaponki from "../pages/Watch/zaponki";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -21,6 +27,12 @@ const MainRouter = () => {
     { path: "/heart", element: <Heart />, key: 4 },
     { path: "/basket", element: <Basket />, key: 5 },
     { path: "/search", element: <Search />, key: 6 },
+    { path: "/watch", element: <Watch />, key: 7 },
+    { path: "/ring", element: <Ring />, key: 8 },
+    { path: "/sergi", element: <Sergi />, key: 9 },
+    { path: "/podveski", element: <Podveski />, key: 10 },
+    { path: "/braslety", element: <Braslety />, key: 11 },
+    { path: "/zaponki", element: <Zaponki />, key: 12 },
   ];
 
   const PRIVATE = [
