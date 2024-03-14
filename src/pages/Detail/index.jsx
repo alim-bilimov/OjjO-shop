@@ -21,6 +21,22 @@ const Detail = () => {
     localStorage.setItem("heart", JSON.stringify(heart));
   }
 
+  function getLikeData() {
+    let product = JSON.parse(localStorage.getItem("like")) || [];
+    let res = product.some((el) => {
+      let arr = sortProduct.some((il) => {
+        return el.id == il.id;
+      });
+      return arr;
+    });
+    if (res == false) {
+      product.push(sortProduct[0]);
+      localStorage.setItem("like", JSON.stringify(product));
+    } else {
+      alert("Этот товар в списке Понравившиехся!!!");
+    }
+  }
+
   function getOrderData() {
     let products = JSON.parse(localStorage.getItem("order")) || [];
     let res = products.some((el) => {
@@ -74,7 +90,7 @@ const Detail = () => {
                           }}
                           onClick={() => {
                             setHeart(true);
-                            getOrderData();
+                            getLikeData();
                           }}
                           className="heart"
                         />
@@ -105,12 +121,23 @@ const Detail = () => {
                     <h1
                       style={{
                         cursor: "pointer",
+                        display: click ? "none" : "block",
                       }}
                       onClick={() => {
                         setClick(!click);
                       }}
                     >
                       читать полностью
+                    </h1>
+                    <h1
+                      style={{
+                        display: click ? "block" : "none",
+                      }}
+                      onClick={() => {
+                        setClick(!click);
+                      }}
+                    >
+                      Закрыть
                     </h1>
                   </div>
                   <div className="just">

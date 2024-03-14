@@ -125,6 +125,15 @@
     }
   }
   .foots {
+    h1 {
+      font-family: Gilroy;
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      margin-top: 100px;
+      text-align: center;
+    }
     .card-foots {
       display: grid;
       grid-template-columns: repeat(3, 40%);

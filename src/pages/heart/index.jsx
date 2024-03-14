@@ -4,8 +4,15 @@ import { FaHeart } from "react-icons/fa";
 const Heart = () => {
   const [state, setState] = useState([]);
 
+  function getDeleteHeart(id) {
+    let products = JSON.parse(localStorage.getItem("like")) || [];
+    products = products.filter((el) => el.id !== id);
+    localStorage.setItem("like", JSON.stringify(products));
+    getHeartData();
+  }
+
   function getHeartData() {
-    let products = JSON.parse(localStorage.getItem("order")) || [];
+    let products = JSON.parse(localStorage.getItem("like")) || [];
     setState(products);
   }
 
@@ -31,7 +38,12 @@ const Heart = () => {
                       <p>Бренд: {el.brand}</p>
                     </div>
                     <div className="heart-btn">
-                      <FaHeart className="f" />
+                      <FaHeart
+                        onClick={() => {
+                          getDeleteHeart(el.id);
+                        }}
+                        className="f"
+                      />
                     </div>
                   </div>
                 </div>
