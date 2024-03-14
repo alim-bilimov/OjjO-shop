@@ -1,9 +1,12 @@
 .hearts {
   margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 40%);
   .heart-div {
     width: 350px;
     height: 300px;
     border-right: solid 1px #3d3d3d;
+
     img {
       width: 300px;
       height: 300px;
@@ -55,6 +58,18 @@
     .f {
       font-size: 28px;
       cursor: pointer;
+      color: red;
     }
   }
+}
+
+.heart-h1 {
+  margin-top: 100px;
+  font-family: Gilroy;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+
+  color: #3d3d3d;
 }
