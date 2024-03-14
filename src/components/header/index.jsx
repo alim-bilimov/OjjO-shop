@@ -40,10 +40,7 @@ const Header = () => {
                   <RiAdminLine className="icons-admin" />
                 </Link>
                 <Link to={"login"}>
-                  <img
-                    src="https://freepngimg.com/save/153886-logo-google-hq-image-free/1261x1280"
-                    alt=""
-                  />
+                  <p>Вход/Регистрация</p>
                 </Link>
 
                 <FaHeart

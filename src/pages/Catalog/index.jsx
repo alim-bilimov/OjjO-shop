@@ -7,9 +7,15 @@ const Catalog = () => {
   const [states, setStates] = useState("");
   const [man, setMan] = useState("");
   const [seasonn, setSeasonn] = useState("");
+  const [brand, setBrand] = useState("");
 
   let arr = product.filter((el) => {
-    return el.category == states && el.for == man && el.season == seasonn;
+    return (
+      el.category == states &&
+      el.for == man &&
+      el.season == seasonn &&
+      el.brandy == brand
+    );
   });
 
   useEffect(() => {
@@ -22,16 +28,21 @@ const Catalog = () => {
         <div className="container">
           <div className="catalog">
             <div className="selection">
-              <select name="" id="">
+              <select onChange={(e) => setBrand(e.target.value)} name="" id="">
                 <option value="">Бренд </option>
+                <option value="Rolex">Rolex </option>
+                <option value="Maria">Maria & Angument </option>
+                <option value="Richard">Richard & Milli </option>
+                <option value="Patek">Patek Philippe </option>
+                <option value="Baselworld">Baselworld </option>
               </select>
               <select onChange={(e) => setStates(e.target.value)} name="" id="">
                 <option value="">Цена</option>
               </select>
               <select onChange={(e) => setMan(e.target.value)} name="" id="">
                 <option value="">Для кого</option>
-                <option value="Для Мужчины">Для Мужчины</option>
-                <option value="Для Женщины">Для Женщины</option>
+                <option value="Для Мужчины">Мужа</option>
+                <option value="Для Женщины">Жены</option>
               </select>
               <select onChange={(e) => setStates(e.target.value)} name="" id="">
                 <option>Категория </option>
@@ -41,6 +52,7 @@ const Catalog = () => {
                 <option value="Часы">Часы</option>
                 <option value="Браслеты">Браслеты</option>
                 <option value="кольца">Кольца</option>
+                <option value="Запонки">Запонки</option>
               </select>
               <select
                 onChange={(e) => setSeasonn(e.target.value)}

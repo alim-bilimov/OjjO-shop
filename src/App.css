@@ -8,6 +8,7 @@
 @import "./pages/Password/password.scss";
 @import "./pages/Basket/basket.scss";
 @import "./pages/search/search.scss";
+@import "./pages/Watch/watch.scss";
 @import "./media.scss";
 * {
   margin: 0;

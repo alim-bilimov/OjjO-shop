@@ -52,22 +52,34 @@ const Home = () => {
             </div>
             <div className="display-all">
               <div>
-                <img src={imgOne} alt="" />
+                <Link to={"/ring"}>
+                  <img src={imgOne} alt="" />
+                </Link>
               </div>
               <div>
-                <img src={imgTwo} alt="" />
+                <Link to={"/sergi"}>
+                  <img src={imgTwo} alt="" />
+                </Link>
               </div>
               <div>
-                <img src={imgThree} alt="" />
+                <Link to={"/podveski"}>
+                  <img src={imgThree} alt="" />
+                </Link>
               </div>
               <div>
-                <img src={imgFore} alt="" />
+                <Link to={"/zaponki"}>
+                  <img src={imgFore} alt="" />
+                </Link>
               </div>
               <div>
-                <img src={imgfive} alt="" />
+                <Link to={"/braslety"}>
+                  <img src={imgfive} alt="" />
+                </Link>
               </div>
               <div>
-                <img src={imgSix} alt="" />
+                <Link to={"/watch"}>
+                  <img src={imgSix} alt="" />
+                </Link>
               </div>
             </div>
           </div>

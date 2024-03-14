@@ -42,7 +42,7 @@ const Basket = () => {
       <div id="basket">
         <div className="container">
           <div className="basket">
-            <h1 className="all-price">Общая Сумма:{counte}сом</h1>
+            <h1 className="all-price">Общая Сумма:{counte}$</h1>
             {basket.length > 0 ? (
               basket.map((el) => (
                 <div>
@@ -50,7 +50,7 @@ const Basket = () => {
                     <img src={el.img} alt="" />
                     <div className="basket-text">
                       <h1>Название:{el.textName}</h1>
-                      <p className="p-p">Цена:{el.price * el.count}сом</p>
+                      <p className="p-p">Цена:{el.price * el.count}$</p>
                       <h3>Количество:{el.count}</h3>
                       <h4
                         onClick={() => {
@@ -89,7 +89,7 @@ const Basket = () => {
                       <h2>Название:{el.textName}</h2>
                       <h3>Бренд:{el.brand}</h3>
                       <div className="foots-text">
-                        <h3>Сумма:{el.price}сом</h3>
+                        <h3>Сумма:{el.price}$</h3>
                         <h4>купить</h4>
                       </div>
                     </div>
