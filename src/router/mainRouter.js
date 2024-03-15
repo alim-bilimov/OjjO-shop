@@ -16,6 +16,7 @@ import Sergi from "../pages/Watch/sergi";
 import Podveski from "../pages/Watch/podveski";
 import Braslety from "../pages/Watch/braslety";
 import Zaponki from "../pages/Watch/zaponki";
+import Edit from "../pages/editProduct";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -38,6 +39,7 @@ const MainRouter = () => {
   const PRIVATE = [
     { path: "/admin", element: <Admin />, key: 1 },
     { path: "/password", element: <Password />, key: 2 },
+    { path: "/edit/:id", element: <Edit />, key: 3 },
   ];
 
   return (

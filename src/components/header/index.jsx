@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../images/Group 3.png";
 import { RiAdminLine } from "react-icons/ri";
@@ -7,7 +7,16 @@ import { IoMdSearch } from "react-icons/io";
 import { UseMainContext } from "../../context/MainContext";
 const Header = () => {
   const navigate = useNavigate();
-  const { count, setValues } = UseMainContext();
+  const { count, setValues, dostup, block, setBlock } = UseMainContext();
+
+  function navAdmin() {
+    let local = JSON.parse(localStorage.getItem("locals")) || [];
+    setBlock(local);
+  }
+
+  useEffect(() => {
+    navAdmin();
+  }, []);
   return (
     <div>
       <header id="header">
@@ -19,7 +28,7 @@ const Header = () => {
               <NavLink to="/vacanse">Вакансии</NavLink>
             </nav>
             <Link to="/">
-              <img src={logo} alt="" />
+              <img className="logo-one" src={logo} alt="" />
             </Link>
 
             <div className="btns">
@@ -36,9 +45,17 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
-                <Link to="password">
-                  <RiAdminLine className="icons-admin" />
-                </Link>
+                <RiAdminLine
+                  onClick={() => {
+                    if (block == true) {
+                      navigate("/admin");
+                    } else if (block == false) {
+                      navigate("/password");
+                    }
+                  }}
+                  className="icons-admin"
+                />
+
                 <Link to={"login"}>
                   <p>Вход/Регистрация</p>
                 </Link>

@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { UseMainContext } from "../../context/MainContext";
 
 const Password = () => {
   const [userName, setUserName] = useState("ojjoShop");
-  const [password, setPassword] = useState("maksatovich02");
+  const [password, setPassword] = useState("ojjo");
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [count, setCount] = useState(3);
   const [time, setTime] = useState(15);
   const [red, setRed] = useState(false);
   const [color, setColor] = useState(false);
+  const { block, setBlock } = UseMainContext();
 
   const naviget = useNavigate();
+
+  function getDostup() {
+    let local = JSON.parse(localStorage.getItem("locals")) || [];
+    local = block == true;
+    localStorage.setItem("locals", JSON.stringify(local));
+  }
 
   function callTimes() {
     if (count == 0) {
@@ -74,7 +82,7 @@ const Password = () => {
             <button
               onClick={() => {
                 if (name == userName && number == password) {
-                  return naviget("/admin");
+                  return naviget("/admin"), getDostup();
                 } else if (name == "" && number == "") {
                   return alert("напишите имя и пароль !!!");
                 } else if (name !== userName) {

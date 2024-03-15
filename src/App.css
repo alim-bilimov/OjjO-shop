@@ -10,6 +10,7 @@
 @import "./pages/search/search.scss";
 @import "./pages/Watch/watch.scss";
 @import "./media.scss";
+@import "./components/footer/footer.scss";
 * {
   margin: 0;
   padding: 0;

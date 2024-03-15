@@ -4,7 +4,7 @@
     display: grid;
     align-items: start;
     justify-content: start;
-    grid-template-columns: repeat(3, 50%);
+    grid-template-columns: repeat(3, 40%);
     grid-row: 200px;
     .watch-div {
       margin-top: 70px;
@@ -58,6 +58,30 @@
           background-color: #3d3d3d;
           color: white;
         }
+      }
+    }
+  }
+  .home-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    a {
+      font-family: Gilroy;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+
+      text-align: left;
+      padding-top: 10px;
+      margin: 0 10px;
+      color: #3d3d3d;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      &:hover {
+        border-bottom: solid 1px #3d3d3d;
       }
     }
   }
