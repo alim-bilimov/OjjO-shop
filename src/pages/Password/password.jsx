@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Password = () => {
   const [userName, setUserName] = useState("ojjoShop");
-  const [password, setPassword] = useState("maksatovich02");
+  const [password, setPassword] = useState("ojjo");
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [count, setCount] = useState(3);
@@ -77,15 +77,15 @@ const Password = () => {
                   return naviget("/admin");
                 } else if (name == "" && number == "") {
                   return alert("напишите имя и пароль !!!");
-                } else if (name !== userName) {
-                  return setRed(true);
-                } else if (number !== password) {
-                  return setColor(true);
                 } else if (name !== userName && number !== password) {
                   if (count > 0) {
                     setCount(count - 1);
                   }
-                  alert("неверный логин и пароль !!!");
+                  return alert("неверный логин и пароль !!!");
+                } else if (name !== userName && number == password) {
+                  return setRed(true);
+                } else if (name == userName && number !== password) {
+                  return setColor(true);
                 }
               }}
             >

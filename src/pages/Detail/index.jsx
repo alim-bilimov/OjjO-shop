@@ -9,10 +9,9 @@ import { FaHeart } from "react-icons/fa";
 
 let likes = JSON.parse(localStorage.getItem("heart"));
 const Detail = () => {
-  const { product, getProduct, setCount, count } = UseMainContext();
+  const { product, getProduct } = UseMainContext();
   const [click, setClick] = useState(false);
   const [heart, setHeart] = useState(likes || false);
-  const [mouse, setMouse] = useState(false);
   const navigate = useNavigate();
 
   const { id } = useParams();
