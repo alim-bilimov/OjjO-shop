@@ -78,8 +78,8 @@ const Admin = () => {
                   <div className="admin-btns">
                     <select onChange={getLableInput} name="for" id="">
                       <option value="">Для Кого</option>
-                      <option value={getLableInput}>Для Мужчины</option>
-                      <option value={getLableInput}>Для Женщины</option>
+                      <option value={getLableInput}>Мужа</option>
+                      <option value={getLableInput}>Жены</option>
                     </select>
                   </div>
                   <div className="admin-btns">
