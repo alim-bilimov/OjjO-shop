@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { UseMainContext } from "../../context/MainContext";
 
 const Password = () => {
   const [userName, setUserName] = useState("ojjoShop");
@@ -10,8 +11,15 @@ const Password = () => {
   const [time, setTime] = useState(15);
   const [red, setRed] = useState(false);
   const [color, setColor] = useState(false);
+  const { block, setBlock } = UseMainContext();
 
   const naviget = useNavigate();
+
+  function getDostup() {
+    let localiz = JSON.parse(localStorage.getItem("locals")) || [];
+    localiz = !block;
+    localStorage.setItem("locals", JSON.stringify(localiz));
+  }
 
   function callTimes() {
     if (count == 0) {
@@ -30,7 +38,7 @@ const Password = () => {
 
   useEffect(() => {
     callTimes();
-  });
+  }, []);
 
   return (
     <div id="password">
@@ -74,7 +82,7 @@ const Password = () => {
             <button
               onClick={() => {
                 if (name == userName && number == password) {
-                  return naviget("/admin");
+                  return naviget("/admin"), getDostup();
                 } else if (name == "" && number == "") {
                   return alert("напишите имя и пароль !!!");
                 } else if (name !== userName && number !== password) {

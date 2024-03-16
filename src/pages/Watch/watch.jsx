@@ -15,6 +15,11 @@ const Watch = () => {
   return (
     <div id="watch">
       <div className="container">
+        <div className="home-detail">
+          <Link to="/">Главная /</Link>
+          <Link to="/catalog">Каталог /</Link>
+          <Link to="/">Категория /</Link>
+        </div>
         <div className="watch">
           {arr.map((el) => (
             <div className="watch-div">

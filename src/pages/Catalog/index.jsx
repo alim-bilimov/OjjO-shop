@@ -3,11 +3,21 @@ import { UseMainContext } from "../../context/MainContext";
 import { Link } from "react-router-dom";
 
 const Catalog = () => {
-  const { product, getProduct } = UseMainContext();
+  const { product, getProduct, deleteProduct } = UseMainContext();
   const [states, setStates] = useState("");
   const [man, setMan] = useState("");
   const [seasonn, setSeasonn] = useState("");
+
+  const [brand, setBrand] = useState("");
+  const [value, setValue] = useState([]);
+
+  function getEditData() {
+    let local = JSON.parse(localStorage.getItem("locals")) || [];
+    setValue(local);
+  }
+
   const [brandd, setBrandd] = useState("");
+
 
   let arr = product.filter((el) => {
     return (
@@ -21,6 +31,7 @@ const Catalog = () => {
 
   useEffect(() => {
     getProduct();
+    getEditData();
   }, []);
 
   return (
@@ -67,7 +78,31 @@ const Catalog = () => {
             </div>
 
             <div className="card-div">
-              {states === "all"
+              {value == true
+                ? product.map((el) => (
+                    <div className="product-div">
+                      <img src={el.img} alt="" />
+                      <h1>{el.textName}</h1>
+                      <h3>{el.brand}</h3>
+
+                      <Link to={`/detail/${el.id}`}>
+                        <button>{el.price}$</button>
+                      </Link>
+                      <div className="btn-edits">
+                        <Link to={`/edit/${el.id}`}>
+                          {" "}
+                          <button className="edit">Edit</button>
+                        </Link>
+                        <button
+                          onClick={() => deleteProduct(el.id)}
+                          className="delete"
+                        >
+                          delete
+                        </button>
+                      </div>
+                    </div>
+                  ))
+                : states === "all"
                 ? product.map((el) => (
                     <div className="product-div">
                       <img src={el.img} alt="" />

@@ -110,16 +110,6 @@
       "for": "Для Мужчины"
     },
     {
-      "id": "dfdc",
-      "textName": "Jaeger-LeCoultre (Швейцария)",
-      "price": "317696.81",
-      "comment": " Фирма основана в 1833 году, а первые часы с логотипом Jaeger-LeCoultre на циферблате появились в 1929-м. У марки из Сент-Имье множество достижений, одно из которых – модели Reverso, корпус которых можно, не снимая часов в руки, перевернуть циферблатом вниз. В свежем прайс-листе самая доступная позиция – 5 950 евро (Grande Reverso), а самая дорогая – 290 000 евро (Gyrotourbillon 1).",
-      "brand": "Jaeger-LeCoultre",
-      "img": "https://static.alltime.ru/obj/article/image-blog/dorogie-chasy/dorogie-chasy_23.jpg",
-      "category": "Часы",
-      "for": "Для Мужчины"
-    },
-    {
       "id": "41f8",
       "textName": "Juste un Clou",
       "price": "54998",
@@ -151,6 +141,32 @@
       "for": "Для Мужчины",
       "season": "Летние Украшения",
       "brandy": "Richard & Milli",
+      "count": 1
+    },
+    {
+      "id": "0d52",
+      "textName": "",
+      "price": "",
+      "comment": "",
+      "brand": "",
+      "img": "",
+      "category": "",
+      "for": "",
+      "season": "",
+      "brandy": "",
+      "count": 1
+    },
+    {
+      "id": "c009",
+      "textName": "sdf",
+      "price": "",
+      "comment": "",
+      "brand": "",
+      "img": "",
+      "category": "",
+      "for": "",
+      "season": "",
+      "brandy": "",
       "count": 1
     }
   ]

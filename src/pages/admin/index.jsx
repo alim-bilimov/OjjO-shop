@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { UseMainContext } from "../../context/MainContext";
 import { useNavigate } from "react-router-dom";
 
 const Admin = () => {
-  const { addInputChange } = UseMainContext();
+  const { addInputChange, block, setBlock, dostup } = UseMainContext();
   const naviget = useNavigate();
   const [values, setValues] = useState({
     textName: "",
@@ -22,11 +22,26 @@ const Admin = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   }
 
+  function ExitAdmin() {
+    let local = JSON.parse(localStorage.getItem("locals")) || [];
+    local = block == true;
+    localStorage.setItem("locals", JSON.stringify(local));
+  }
+
   return (
     <div>
       <div id="admin">
         <div className="container">
           <div className="admin">
+            <button
+              onClick={() => {
+                ExitAdmin();
+                naviget("/password");
+              }}
+              className="btn-exit"
+            >
+              Выйти
+            </button>
             <h1>Добавление Продукции:</h1>
             <div className="admin-all">
               <div className="admin-left">
@@ -103,6 +118,9 @@ const Admin = () => {
                     onClick={() => {
                       addInputChange(values);
                       naviget("/catalog");
+                      if (values === "") {
+                        alert("заполните все строки !!!");
+                      }
                     }}
                   >
                     Add
