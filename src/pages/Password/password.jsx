@@ -85,15 +85,15 @@ const Password = () => {
                   return naviget("/admin"), getDostup();
                 } else if (name == "" && number == "") {
                   return alert("напишите имя и пароль !!!");
-                } else if (name !== userName) {
-                  return setRed(true);
-                } else if (number !== password) {
-                  return setColor(true);
                 } else if (name !== userName && number !== password) {
                   if (count > 0) {
                     setCount(count - 1);
                   }
-                  alert("неверный логин и пароль !!!");
+                  return alert("неверный логин и пароль !!!");
+                } else if (name !== userName && number == password) {
+                  return setRed(true);
+                } else if (name == userName && number !== password) {
+                  return setColor(true);
                 }
               }}
             >
