@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { UseMainContext } from "../../context/MainContext";
 import { useNavigate } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const Admin = () => {
 
   function ExitAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
-    local = block == false;
+    local = block == true;
     localStorage.setItem("locals", JSON.stringify(local));
   }
 

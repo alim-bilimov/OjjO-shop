@@ -16,9 +16,9 @@ const Password = () => {
   const naviget = useNavigate();
 
   function getDostup() {
-    let local = JSON.parse(localStorage.getItem("locals")) || [];
-    local = block == true;
-    localStorage.setItem("locals", JSON.stringify(local));
+    let localiz = JSON.parse(localStorage.getItem("locals")) || [];
+    localiz = !block;
+    localStorage.setItem("locals", JSON.stringify(localiz));
   }
 
   function callTimes() {
@@ -38,7 +38,7 @@ const Password = () => {
 
   useEffect(() => {
     callTimes();
-  });
+  }, []);
 
   return (
     <div id="password">

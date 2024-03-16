@@ -1,5 +1,7 @@
 #footer {
-  margin: 100px 0;
+  margin: 10px 0;
+  box-shadow: 1px 1px 1px #3d3d3d;
+
   .footer {
     .footer-div {
       display: flex;
@@ -12,11 +14,26 @@
 
       flex-direction: column;
       margin-top: 50px;
+      .div {
+        margin-top: 35px;
+      }
+      .div-call {
+        margin-top: 35px;
+      }
+      nav {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 35px;
+      }
+      .oplata-div {
+        margin-top: 40px;
+      }
       h1 {
         font-family: Gilroy;
         font-size: 24px;
         border-bottom: solid 1px #3d3d3d;
-        width: 250px;
+        width: 230px;
         height: 35px;
 
         font-weight: 500;
@@ -46,11 +63,13 @@
         color: #3d3d3d;
       }
     }
+
     .footer-img {
+      margin: 20px 0;
       img {
         width: 50px;
         height: 50px;
-        margin: 10px 10px;
+        margin: 0 10px;
       }
     }
     .sate {
@@ -59,7 +78,7 @@
       gap: 10px;
       .icons-fot {
         font-size: 20px;
-        margin: 0 10px;
+        margin: 15px 0;
       }
     }
   }
@@ -68,5 +87,22 @@
     align-content: start;
     justify-content: space-between;
     margin-top: 100px;
+  }
+}
+
+#footer-two {
+  padding: 20px 0;
+  .footer-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-family: Gilroy;
+      font-size: 17px;
+
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+    }
   }
 }

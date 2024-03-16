@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="footer-one">
                 <h1>Полезные ссылки</h1>
                 <nav>
-                  <a href="#">Доставка</a>
+                  <a href="home">Доставка</a>
                   <a href="#">Оплата </a>
                   <a href="#">Акции</a>
                   <a href="#">Политика конфиденциальности</a>
@@ -25,13 +25,15 @@ const Footer = () => {
               </div>
               <div className="footer-one">
                 <h1>оплата</h1>
-                <nav>
+
+                <div className="oplata-div">
                   <p>
                     Lorem ipsum dolor sit amet <br /> consectetur adipisicing
                     elit. <br />
                     Possimus, ad?
                   </p>
-                </nav>
+                </div>
+
                 <div className="footer-img">
                   <img
                     src="https://media.licdn.com/dms/image/C4D0BAQHQQCFad4EpSQ/company-logo_200_200/0/1675943978852/bank_kyrgyzstan_logo?e=2147483647&v=beta&t=PBTjiyW6vD3mh3SmOUBBvWg4xsZmO0CUJqRQ7AVcUVY"
@@ -102,6 +104,17 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-two">
+        <div className="container">
+          <div className="footer-two">
+            <h3>(c) 2020 OJJO jewelry</h3>
+            <h3>Договор публичной офферты</h3>
+            <h3>Контрагентам </h3>
+            <h3>Сделано Figma.info</h3>
           </div>
         </div>
       </div>

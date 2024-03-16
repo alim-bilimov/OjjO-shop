@@ -10,7 +10,7 @@ const MainContext = ({ children }) => {
   const [product, setProduct] = useState([]);
   const [count, setCount] = useState(1);
   const [value, setValues] = useState("");
-  const [block, setBlock] = useState(null);
+  const [block, setBlock] = useState(false);
   const [oneProduct, setoneProduct] = useState({});
 
   async function addInputChange(product) {
