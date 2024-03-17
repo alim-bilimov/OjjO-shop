@@ -24,6 +24,8 @@
       .input-btn {
         display: flex;
         align-items: center;
+        justify-content: start;
+        margin-left: -20px;
         input {
           background-color: transparent;
           color: #ffffff;
@@ -36,6 +38,9 @@
           background-color: transparent;
           color: white;
           border: none;
+          margin: 0 20px;
+          cursor: pointer;
+          margin-left: -20px;
         }
       }
       .icons {
@@ -44,6 +49,13 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        cursor: pointer;
+        margin-left: -30px;
+      }
+      .login {
+        p {
+          width: 110px;
+        }
       }
       .icons-admin {
         font-size: 24px;
@@ -61,6 +73,10 @@
     }
   }
   .logo-one {
+
     margin-left: 70px;
+
+    margin-left: 50px;
+
   }
 }

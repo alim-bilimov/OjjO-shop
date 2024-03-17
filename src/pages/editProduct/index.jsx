@@ -85,6 +85,7 @@ const Edit = () => {
                     placeholder="Скидка"
                     value={sale}
                   />
+                  <input type="text" placeholder="Скидка" />
 
                   <button
                     onClick={() => {

@@ -3,21 +3,28 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../images/Group 3.png";
 import { RiAdminLine } from "react-icons/ri";
 import { FaHeart } from "react-icons/fa";
+import { RiShoppingBasket2Line } from "react-icons/ri";
 import { IoMdSearch } from "react-icons/io";
 import { UseMainContext } from "../../context/MainContext";
 import { CiMenuBurger } from "react-icons/ci";
 const Header = () => {
   const navigate = useNavigate();
+
   const { count, setValues, dostup, block, setBlock } = UseMainContext();
 
   function navAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
     local[0] > 0 ? navigate("/admin") : navigate("/password");
+    setBlock(local);
+
   }
 
   useEffect(() => {
     navAdmin();
   }, []);
+
+  const { setValues } = UseMainContext();
+
   return (
     <div>
       <header id="header">
@@ -40,7 +47,11 @@ const Header = () => {
                   type="text"
                   placeholder="Text ..."
                 />
-                <button onClick={() => {}}>
+                <button
+                  onClick={() => {
+                    navigate("/search");
+                  }}
+                >
                   {" "}
                   <IoMdSearch />
                 </button>
@@ -49,6 +60,14 @@ const Header = () => {
                 <RiAdminLine
                   onClick={() => {
                     navAdmin();
+
+                <RiAdminLine
+                  onClick={() => {
+                    if (block == true) {
+                      navigate("/admin");
+                    } else if (block == false) {
+                      navigate("/password");
+                    }
                   }}
                   className="icons-admin"
                 />
@@ -57,6 +76,16 @@ const Header = () => {
                   <p>Вход/Регистрация</p>
                 </Link>
 
+                <Link to="password">
+                  <RiAdminLine className="icons-admin" />
+                </Link>
+                <div className="login">
+                  <Link to={"login"}>
+                    <p>Вход/Регистрация</p>
+                  </Link>
+                </div>
+
+
                 <FaHeart
                   onClick={() => {
                     navigate("/heart");
@@ -64,6 +93,11 @@ const Header = () => {
                   className="icons-like"
                 />
                 <CiMenuBurger style={{ color: "black" }} />
+                <RiShoppingBasket2Line
+                  onClick={() => {
+                    navigate("/basket");
+                  }}
+                />
               </div>
             </div>
           </div>

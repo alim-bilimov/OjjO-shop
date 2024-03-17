@@ -7,6 +7,7 @@ const Catalog = () => {
   const [states, setStates] = useState("");
   const [man, setMan] = useState("");
   const [seasonn, setSeasonn] = useState("");
+
   const [brand, setBrand] = useState("");
   const [value, setValue] = useState([]);
 
@@ -16,15 +17,21 @@ const Catalog = () => {
       setValue(el);
     });
   }
+    setValue(local);
+  }
+
+  const [brandd, setBrandd] = useState("");
+
 
   let arr = product.filter((el) => {
     return (
       el.category == states &&
       el.for == man &&
       el.season == seasonn &&
-      el.brandy == brand
+      el.brandy == brandd
     );
   });
+  console.log(arr);
 
   useEffect(() => {
     getProduct();
@@ -37,12 +44,12 @@ const Catalog = () => {
         <div className="container">
           <div className="catalog">
             <div className="selection">
-              <select onChange={(e) => setBrand(e.target.value)} name="" id="">
+              <select onChange={(e) => setBrandd(e.target.value)} name="" id="">
                 <option value="">Бренд </option>
                 <option value="Rolex">Rolex </option>
-                <option value="Maria">Maria & Angument </option>
-                <option value="Richard">Richard & Milli </option>
-                <option value="Patek">Patek Philippe </option>
+                <option value="Maria & Angument">Maria & Angument </option>
+                <option value="Richard & Milli">Richard & Milli </option>
+                <option value="Patek Philippe">Patek Philippe </option>
                 <option value="Baselworld">Baselworld </option>
               </select>
               <select onChange={(e) => setStates(e.target.value)} name="" id="">

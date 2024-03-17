@@ -25,6 +25,7 @@ const Admin = () => {
   function ExitAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
     local[0] = false;
+    local = block == true;
     localStorage.setItem("locals", JSON.stringify(local));
   }
 
@@ -93,8 +94,8 @@ const Admin = () => {
                   <div className="admin-btns">
                     <select onChange={getLableInput} name="for" id="">
                       <option value="">Для Кого</option>
-                      <option value={getLableInput}>Для Мужчины</option>
-                      <option value={getLableInput}>Для Женщины</option>
+                      <option value={getLableInput}>Мужа</option>
+                      <option value={getLableInput}>Жены</option>
                     </select>
                   </div>
                   <div className="admin-btns">
