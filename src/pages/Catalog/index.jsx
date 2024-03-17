@@ -16,12 +16,10 @@ const Catalog = () => {
     local.map((el) => {
       setValue(el);
     });
-  }
     setValue(local);
   }
 
   const [brandd, setBrandd] = useState("");
-
 
   let arr = product.filter((el) => {
     return (
@@ -134,5 +132,4 @@ const Catalog = () => {
     </div>
   );
 };
-
 export default Catalog;

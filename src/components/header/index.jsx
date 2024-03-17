@@ -12,19 +12,6 @@ const Header = () => {
 
   const { count, setValues, dostup, block, setBlock } = UseMainContext();
 
-  function navAdmin() {
-    let local = JSON.parse(localStorage.getItem("locals")) || [];
-    local[0] > 0 ? navigate("/admin") : navigate("/password");
-    setBlock(local);
-
-  }
-
-  useEffect(() => {
-    navAdmin();
-  }, []);
-
-  const { setValues } = UseMainContext();
-
   return (
     <div>
       <header id="header">
@@ -59,32 +46,17 @@ const Header = () => {
               <div className="icons">
                 <RiAdminLine
                   onClick={() => {
-                    navAdmin();
-
-                <RiAdminLine
-                  onClick={() => {
-                    if (block == true) {
-                      navigate("/admin");
-                    } else if (block == false) {
-                      navigate("/password");
-                    }
+                    let local =
+                      JSON.parse(localStorage.getItem("locals")) || [];
+                    local[0] > 0 ? navigate("/admin") : navigate("/password");
                   }}
                   className="icons-admin"
                 />
-
-                <Link to={"login"}>
-                  <p>Вход/Регистрация</p>
-                </Link>
-
-                <Link to="password">
-                  <RiAdminLine className="icons-admin" />
-                </Link>
                 <div className="login">
                   <Link to={"login"}>
                     <p>Вход/Регистрация</p>
                   </Link>
                 </div>
-
 
                 <FaHeart
                   onClick={() => {
