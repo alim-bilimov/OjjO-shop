@@ -22,7 +22,6 @@ const Password = () => {
     } else {
       localiz.push(true);
     }
-    localiz = !block;
     localStorage.setItem("locals", JSON.stringify(localiz));
   }
 
