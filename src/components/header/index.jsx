@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { IoMdSearch } from "react-icons/io";
 import { UseMainContext } from "../../context/MainContext";
+import { CiMenuBurger } from "react-icons/ci";
 const Header = () => {
   const navigate = useNavigate();
 
@@ -13,7 +14,9 @@ const Header = () => {
 
   function navAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
+    local[0] > 0 ? navigate("/admin") : navigate("/password");
     setBlock(local);
+
   }
 
   useEffect(() => {
@@ -54,6 +57,9 @@ const Header = () => {
                 </button>
               </div>
               <div className="icons">
+                <RiAdminLine
+                  onClick={() => {
+                    navAdmin();
 
                 <RiAdminLine
                   onClick={() => {
@@ -86,6 +92,7 @@ const Header = () => {
                   }}
                   className="icons-like"
                 />
+                <CiMenuBurger style={{ color: "black" }} />
                 <RiShoppingBasket2Line
                   onClick={() => {
                     navigate("/basket");

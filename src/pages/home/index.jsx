@@ -9,8 +9,9 @@ import imgSix from "../../images/second-screen__category-item (5).png";
 import blogItem from "../../images/blog__item.png";
 import blogItemTwo from "../../images/blog__item (1).png";
 import blogItemThree from "../../images/blog__item (2).png";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 const Home = () => {
+  const Navigate = useNavigate();
   return (
     <div>
       <div id="home">
@@ -116,7 +117,13 @@ const Home = () => {
               <img src={blogItemTwo} alt="" />
               <img src={blogItemThree} alt="" />
             </div>
-            <button>читать наш блог</button>
+            <button
+              onClick={() => {
+                Navigate("/exclusive");
+              }}
+            >
+              читать наш блог
+            </button>
           </div>
         </div>
       </div>

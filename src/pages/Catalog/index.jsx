@@ -13,6 +13,10 @@ const Catalog = () => {
 
   function getEditData() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
+    local.map((el) => {
+      setValue(el);
+    });
+  }
     setValue(local);
   }
 

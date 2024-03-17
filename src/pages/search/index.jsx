@@ -47,7 +47,11 @@ const Search = ({ addData }) => {
                 </div>
               ))
             ) : (
-              <h1>dsfsf</h1>
+              <center>
+                <h1 className="h1-serh">
+                  Продукт: "{value}" , не существует!!!
+                </h1>
+              </center>
             )}
           </div>
         </div>

@@ -24,6 +24,7 @@ const Admin = () => {
 
   function ExitAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
+    local[0] = false;
     local = block == true;
     localStorage.setItem("locals", JSON.stringify(local));
   }
