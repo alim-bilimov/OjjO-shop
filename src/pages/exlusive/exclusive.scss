@@ -1,0 +1,70 @@
+#exclusive {
+  height: 70vh;
+  filter: brightness(70%);
+  .exclusive {
+  }
+}
+#coul {
+  .coul {
+    width: 100%;
+    h1 {
+      margin: 50px 0;
+      font-family: Gilroy;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #3d3d3d;
+    }
+    h4 {
+      margin: 20px 0;
+      font-family: Gilroy;
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      color: #3d3d3d;
+    }
+    p {
+      font-family: Gilroy;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #3d3d3d;
+    }
+    h3 {
+      margin: 30px 0;
+      font-family: Gilroy;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      color: #3d3d3d;
+    }
+    .img-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 100px 0;
+      .img-exs {
+      }
+      h5 {
+        margin: 20px 0;
+        font-family: Gilroy;
+        font-size: 19px;
+        cursor: pointer;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #3d3d3d;
+      }
+    }
+  }
+}

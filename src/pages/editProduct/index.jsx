@@ -10,6 +10,7 @@ const Edit = () => {
   const [price, setPrice] = useState("");
   const [comment, setComment] = useState("");
   const [brand, setBrand] = useState("");
+  const [sale, setSale] = useState("");
 
   const { id } = useParams();
 
@@ -23,6 +24,7 @@ const Edit = () => {
       setPrice(oneProduct.price);
       setComment(oneProduct.comment);
       setBrand(oneProduct.brand);
+      setSale(oneProduct.sale);
     }
   }, [oneProduct]);
 
@@ -32,6 +34,7 @@ const Edit = () => {
       price: price,
       comment: comment,
       brand: brand,
+      sale: sale,
     };
     getOneProduct(id, newObj);
   }
@@ -76,7 +79,12 @@ const Edit = () => {
               </div>
               <div className="admin-box">
                 <div className="admin-right">
-                  <input type="text" placeholder="Скидка" />
+                  <input
+                    onChange={(e) => setSale(e.target.value)}
+                    type="number"
+                    placeholder="Скидка"
+                    value={sale}
+                  />
 
                   <button
                     onClick={() => {

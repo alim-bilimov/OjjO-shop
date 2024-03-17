@@ -12,7 +12,9 @@ const Catalog = () => {
 
   function getEditData() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
-    setValue(local);
+    local.map((el) => {
+      setValue(el);
+    });
   }
 
   let arr = product.filter((el) => {

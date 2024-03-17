@@ -38,7 +38,7 @@
     },
     {
       "id": "f015",
-      "textName": "серьги",
+      "textName": "серьги из бриллианта",
       "price": "10000",
       "comment": " Серьги-клипсы - Богатый декор",
       "brand": "бриллиант",
@@ -131,43 +131,39 @@
       "count": 1
     },
     {
-      "id": "77b5",
-      "textName": "Богатые золотые запонки с черным перламутром",
-      "price": "1.578",
-      "comment": "Представляем вашему вниманию богатые золотые запонки с черным перламутром и бриллиантами 0.10ct. Белое золото.",
-      "brand": "Richard && Milli",
-      "img": "https://misterdiamond.ru/upload/iblock/ed7/ed7624501c598b1fea436d8382301277.jpg",
-      "category": "Запонки",
-      "for": "Для Мужчины",
+      "id": "544a",
+      "textName": "Обручальные кольца от Mairia & Angument",
+      "price": "101000",
+      "comment": "Оригинальное обручальное кольцо из платины станет гармоничным завершением Вашего свадебного образа. Матированная поверхность с прочерченной полоской в середине придаёт украшению неповторимый стиль. Оставайтесь стильными вместе с Platinum Lab. Каждое наше украшение из платины уникально. Мы индивидуально подходим к выпуску каждого украшения. Вы можете быть уверены в том, что обладаете по-настоящему оригинальным ювелирным изделием. В связи с этим возможно расхождение технических параметров с указанными выше. Разница может составлять 5-15 процентов, как в меньшую, так и в большую сторону. Мы не производим перерасчет стоимости готового украшения.  Мы используем только натуральные камни природного происхождения, поэтому каратный вес камней одного диаметра может отличаться. Для вставок взята расчетная стоимость исходя из следующих характеристик: бриллианты – 4/5А; черные бриллианты — 7/6 черный А; сапфиры, рубины — 2/2; изумруды — 3/3; жемчуг натуральный культивированный пресноводный; оникс природный. По вашему желанию мы можем использовать в украшениях камни любых возможных характеристик. Расчет конечной стоимости украшения будет произведен с учетом новых характеристик.",
+      "brand": "Maria & Angumetn",
+      "img": "https://platinumlab.ru/assets/cache/images/_rings_art_2/%21PR-032-02-M1-900x900-fe0.jpg",
+      "category": "Кольца",
+      "for": "",
       "season": "Летние Украшения",
-      "brandy": "Richard & Milli",
+      "brandy": "Maria & Angument",
       "count": 1
+    }
+  ],
+  "backdrop_path": [
+    {
+      "image": "https://melikovgold.ru/wp-content/uploads/2020/10/Capture0123-675.jpg",
+      "id": "0c0a"
     },
     {
-      "id": "0d52",
-      "textName": "",
-      "price": "",
-      "comment": "",
-      "brand": "",
-      "img": "",
-      "category": "",
-      "for": "",
-      "season": "",
-      "brandy": "",
-      "count": 1
+      "image": "https://s6.stc.all.kpcdn.net/woman/wp-content/uploads/2022/09/modnye-obruchalnye-kolcza-tendenczii-i-krasivye-novinki-960-540-960x540.jpg",
+      "id": "e6c5"
     },
     {
-      "id": "c009",
-      "textName": "sdf",
-      "price": "",
-      "comment": "",
-      "brand": "",
-      "img": "",
-      "category": "",
-      "for": "",
-      "season": "",
-      "brandy": "",
-      "count": 1
+      "image": "https://static.alltime.ru/obj/article/image-blog/Kak_nosyat_obruchalnyye_koltsa/Kak_nosyat_obruchalnyye_koltsa_3.jpg",
+      "id": "4309"
+    },
+    {
+      "image": "https://divagold.ru/images/stati/obruchalnye-koltsa/novinka-DSC05182.jpg",
+      "id": "9917"
+    },
+    {
+      "image": "https://cs2.livemaster.ru/storage/41/95/094f191da5ae03f9876e53846ddz--ukrasheniya-obruchalnye-koltsa-iz-krasnogo-zolota-585-s-fiani.jpg",
+      "id": "0d72"
     }
   ]
 }

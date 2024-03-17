@@ -17,6 +17,7 @@ import Podveski from "../pages/Watch/podveski";
 import Braslety from "../pages/Watch/braslety";
 import Zaponki from "../pages/Watch/zaponki";
 import Edit from "../pages/editProduct";
+import Exclusive from "../pages/exlusive";
 
 const MainRouter = () => {
   const PUBLIC = [
@@ -34,6 +35,7 @@ const MainRouter = () => {
     { path: "/podveski", element: <Podveski />, key: 10 },
     { path: "/braslety", element: <Braslety />, key: 11 },
     { path: "/zaponki", element: <Zaponki />, key: 12 },
+    { path: "/exclusive", element: <Exclusive />, key: 13 },
   ];
 
   const PRIVATE = [

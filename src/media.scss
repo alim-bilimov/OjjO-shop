@@ -518,3 +518,69 @@
     }
   }
 }
+
+@media (max-width: 390px) {
+  #header {
+    background: #333333de;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        a {
+          color: #ffffff;
+          font-size: 15px;
+        }
+      }
+      img {
+        width: 160px;
+        margin-left: 40px;
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-left: 50px;
+
+        .input-btn {
+          display: flex;
+          align-items: center;
+          input {
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 15px;
+            border: none;
+            outline: none;
+          }
+          button {
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            border: none;
+          }
+        }
+        .icons {
+          font-size: 24px;
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .icons-admin {
+          font-size: 24px;
+          color: white;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

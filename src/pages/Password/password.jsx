@@ -17,7 +17,11 @@ const Password = () => {
 
   function getDostup() {
     let localiz = JSON.parse(localStorage.getItem("locals")) || [];
-    localiz = !block;
+    if (localiz.length > 0) {
+      localiz[0] = true;
+    } else {
+      localiz.push(true);
+    }
     localStorage.setItem("locals", JSON.stringify(localiz));
   }
 

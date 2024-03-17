@@ -5,13 +5,14 @@ import { RiAdminLine } from "react-icons/ri";
 import { FaHeart } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
 import { UseMainContext } from "../../context/MainContext";
+import { CiMenuBurger } from "react-icons/ci";
 const Header = () => {
   const navigate = useNavigate();
   const { count, setValues, dostup, block, setBlock } = UseMainContext();
 
   function navAdmin() {
     let local = JSON.parse(localStorage.getItem("locals")) || [];
-    setBlock(local);
+    local[0] > 0 ? navigate("/admin") : navigate("/password");
   }
 
   useEffect(() => {
@@ -47,11 +48,7 @@ const Header = () => {
               <div className="icons">
                 <RiAdminLine
                   onClick={() => {
-                    if (block == true) {
-                      navigate("/admin");
-                    } else if (block == false) {
-                      navigate("/password");
-                    }
+                    navAdmin();
                   }}
                   className="icons-admin"
                 />
@@ -66,6 +63,7 @@ const Header = () => {
                   }}
                   className="icons-like"
                 />
+                <CiMenuBurger style={{ color: "black" }} />
               </div>
             </div>
           </div>
